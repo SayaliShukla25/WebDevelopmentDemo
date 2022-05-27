@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        //Array in java script
+        var colors = ["red", "blue", "green", "black"];
+        colors.splice(3, 0, "white", "pink");
+        //const colorCopy = colors.slice(2);
+        colors.sort();
+        colors.reverse();
+        var data = "";
+ 
+            var data = "<ol>";
+            for (let i = 0; i < colors.length; i++) {
+                data += "<li>" + colors[i] + "</li>";
+
+            }
+            data += "</ol>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = colors;
+       
+
+    </script>
+
+</body>
+</html>

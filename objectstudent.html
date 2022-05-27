@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        const marks = {
+            rollno: 12,
+            name: "sayali",
+            hindi: 90,
+            science: 84,
+            history: 75,
+            english: 92,
+            percentage: function () {
+                return ((this.hindi + this.science + this.history + this.english) / 400) * 100;
+            },
+            display: function () {
+                return "Roll No:" + this.rollno + "Name: " + this.name + " Percentage: " + this.percentage();
+            }
+
+        }
+        document.getElementById("d1").innerHTML = marks.display();
+    </script>
+</body>
+</html>

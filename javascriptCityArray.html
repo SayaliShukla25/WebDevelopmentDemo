@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        //Array in java script
+        var city = ["pune", "mumbai", "nashik", "delhi"];
+        var arr = [];
+
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+
+        var data = "<ol>";
+        for (let i = 0; i < city.length; i++) {
+            data += "<li>" + city[i] + "</li>";
+        }
+        data += "</ol>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+
+    </script>
+
+</body>
+</html>

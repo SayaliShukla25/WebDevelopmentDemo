@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        function display(data) {
+            document.getElementById("d1").innerHTML = data;
+        }
+
+        function Person() {
+            this.name = 'sayali',
+                this.age = 25,
+                this.sayName = function () {
+
+                    console.log(this.age);
+                    let innerFunc = () => {
+                        console.log(this.age);
+                    }
+
+                    innerFunc();
+                }
+        }
+
+        const x = new Person();
+        x.sayName();
+    </script>
+</body>
+</html>
+
+

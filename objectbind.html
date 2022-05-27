@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        //bind()
+        const employee = {
+            firstname: "Test",
+            lastname:"Test 1",
+            age: 30,
+            fullName: function () {
+                return this.firstname + " " + this.lastname;
+            }
+        }
+        const member = {
+            firstname: "User1",
+            lastname: "User"
+        }
+        let empinfo = employee.fullName.bind(member);
+        document.getElementById("d1").innerHTML = empinfo();
+       
+    </script>
+</body>
+</html>

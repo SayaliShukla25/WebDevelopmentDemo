@@ -1,0 +1,38 @@
+
+<html>
+<head>
+</head>
+<body>
+    <script>
+        function addition() {
+            var a = 10, b = 30;
+            var c = a + b;
+            console.log(c);
+        }
+        //arguments in function
+        function sub(n1, n2) {
+            var sub;
+            sub = n1 - n2;
+            console.log(sub);
+
+        }
+        function display(empid, empname, salary) {
+            console.log(empid + " " + empname + " " + salary);
+        }
+        //function with arguments with return type function
+
+        function sub2(n1, n2){
+            var sub;
+            sub = n1 - n2;
+            return sub;
+        }
+        addition();
+        sub(45, 23);
+        display(100, "sayali", 35000);
+        var result = sub2(30, 20);
+
+
+    </script>
+
+</body>
+</html>

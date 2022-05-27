@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d2"></div>
+    <script>
+        // function display() {
+        //     document.getElementById("d1").innerHTML = "Hello all good morning";
+        // }
+        // setTimeout(display, 3000);
+
+     //   setTimeout(function () {
+       //     document.getElementById("d1").innerHTML = "Hello all good morning";
+      //  }, 2000);
+
+       function showtime() {
+       let d = new Date();
+       let result = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+       document.getElementById("d2").innerHTML = result;
+
+       }
+        setInterval(showtime, 1000);
+
+    </script>
+</body>
+</html>

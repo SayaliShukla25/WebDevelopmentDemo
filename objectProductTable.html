@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+    const Products =
+        [
+            {
+                name: "laptop",
+                id: "102",
+                price: "34000"
+            },
+
+            {
+                name: "mobile",
+                id: "103",
+                price: "30000"
+               
+
+            },
+
+            {
+                name: "watch",
+                id: " 103",
+                price: "12000"
+
+            }
+        ]
+        var data = "<table border='1'><tr><th> Name</th><th>Id</th><th>Price</th></tr>";
+        for (let i = 0; i <Products.length; i++) {
+            data += "<tr><td>" + Products[i].name + "</td><td>" + Products[i].id +
+                "</td><td>" + Products[i].price + "</td></tr>";
+        }
+        data += "</table>";
+        document.getElementById("d1").innerHTML = data;
+    </script>
+</body>
+</html>
