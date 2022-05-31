@@ -1,0 +1,32 @@
+<html>
+<head></head>
+    <body>
+        <input type="button" value="Count" onclick="display()" />
+        <div id="d1"></div>
+        <script>
+            const result = (
+                function () {
+                    let counter = 0;
+                    return function () {  // closures
+                        counter++;
+                        return counter;
+                    }
+                })();
+
+            const result2 = (
+                () => {
+                    let counter = 0;
+                    return () => {  // closures
+                        counter++;
+                        return counter;
+                    }
+                })();
+
+            function display() {
+
+                document.getElementById("d1").innerHTML = result2();
+            }
+
+        </script>
+   </body>
+</html>
